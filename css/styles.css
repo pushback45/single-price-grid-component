@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+:root{
+    --cyan :hsl(179, 62%, 43%);
+    --bryellow: hsl(71, 73%, 54%);
+    --lightgray: hsl(204, 43%, 93%);
+    --grayblue: hsl(218, 22%, 67%);
+    --fontsize: 1em;
+    --karla: 'Karla', sans-serif;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--lightgray);
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.card{
+    text-align: left;
+    background-color: #fff;
+    width: 90%;
+    min-height: 45vh;
+    margin-top: 25px;
+    border-radius: 5px 5px 0 0;
+}
+.card-title{
+    color: var(--cyan);
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 20px;
+    font-family: var(--karla);
+}
+.card-about{
+     margin-top: 20px;
+    margin-left: 15px;
+    color: var(--bryellow);
+    font-family: var(--karla);
+}
+.card-description{
+    margin-top: 20px;
+    margin-left: 15px;
+    color: var(--grayblue);
+    line-height: 1.6;
+    font-family: var(--karla);
+}
+.sec-card{
+    text-align: left;
+    background-color: var(--cyan);
+    width: 90%;
+    min-height: 45vh;
+}
+.seccard-title{
+    color: var(--lightgray);
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 20px;
+    font-family: var(--karla);
+}
+.price-tag{
+    display: flex;
+}
+.dollar{
+    margin-top: 20px;
+    margin-left: 15px;
+    font-family: var(--karla);
+    color: #fff;
+}
+.monthly{
+     margin-top: 25px;
+    margin-left: 10px;
+    font-size: var(--fontsize);
+    font-family: var(--karla);
+    color: var(--grayblue);
+}
+.seccard-descrip{
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 17px;
+    font-family: var(--karla);
+    color: var(--lightgray);
+}
+.signup-button{
+    width: 90%;
+    margin-top: 30px;
+    margin-left: 15px;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    height: 10vh;
+    font-family: var(--karla);
+    background: var(--bryellow);
+    color: #fff;
+    font-size: var(--fontsize);
+}
+
+.third-card{
+    text-align: left;
+    background: linear-gradient(90deg, rgba(42,178,175,0.8) 0%, rgba(42,178,175,1) 100%);
+    width: 90%;
+    min-height: 45vh;
+}
+.third-card h1{
+     margin-top: 20px;
+    margin-left: 15px;
+    font-size: 20px;
+    color: #fff;
+    font-family: var(--karla);
+}
+.third-card .tutorial{
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.third-card p{
+    font-size: var(--fontsize);
+    margin-left: 15px;
+    font-family: var(--karla);
+    color: var(--lightgray);
+}
+
+
+
+@media(min-width: 78.125em){
+    .card{
+        min-height: 30vh;
+        width: 45%;
+    }
+   .sec-card{
+    width: 25%;
+    margin-right: 250px;
+   }
+   .third-card{
+    width: 21.5%;
+    margin-left: 380px;
+    margin-right: 80px;
+    margin-top: -274px;
+    padding-left: 20px;
+    background: contain;
+   }
+  
+}
+
+
+
+.attribution 
+{				
+    font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+} 
