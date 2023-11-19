@@ -16,13 +16,13 @@
 }
 body{
     background: var(--lightgray);
+    display: grid; 
+    grid-template-columns: repeat(1,2fr);
 }
 .container{
-    display: flex;
+    display: grid; 
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
-    flex-direction: column;
 }
 .card{
     text-align: left;
@@ -31,6 +31,8 @@ body{
     min-height: 45vh;
     margin-top: 25px;
     border-radius: 5px 5px 0 0;
+    display: grid; 
+    grid-column: span 1;
 }
 .card-title{
     color: var(--cyan);
@@ -108,7 +110,7 @@ body{
     min-height: 45vh;
 }
 .third-card h1{
-     margin-top: 20px;
+    padding-top: 20px;
     margin-left: 15px;
     font-size: 20px;
     color: #fff;
@@ -128,26 +130,30 @@ body{
 
 
 @media(min-width: 78.125em){
+    .container{
+        display: grid; 
+        grid-template-columns: repeat(2,2fr);
+    }
     .card{
         min-height: 30vh;
         width: 45%;
+        display: grid; 
+        grid-column: span 2;
     }
    .sec-card{
     width: 25%;
     margin-right: 250px;
    }
    .third-card{
-    width: 21.5%;
-    margin-left: 380px;
+    width: 20%;
+    margin-left: 25%;
     margin-right: 80px;
-    margin-top: -274px;
+    margin-top: -24.3%;
     padding-left: 20px;
     background: contain;
    }
   
 }
-
-
 
 .attribution 
 {				
